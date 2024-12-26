@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 1 - The Hunt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .hint {
+      color: #00d8ff;
+      font-weight: bold;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: block;
+      color: #ff4747;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: #00d8ff;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #008fbf;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Level 1</h1>
+    <p>Welcome to the first level of the hunt!</p>
+    <p class="hint">Can you find the hidden clue?</p>
+    <div class="links">
+      <a href="level1a.html">Explore Path A</a>
+      <a href="level1b.html">Explore Path B</a>
+      <a href="level1c.html">Explore Path C</a>
+    </div>
+    <button id="hintButton">Click for a Hint</button>
+  </div>
+
+  <!-- Bro! if you got this right, you are awsome but you have to do level 2 for gta5. follow the link below to get to level 2 -->
+  <!-- -->
+  <!-- Congratulations! You've found the hidden clue. Proceed to the next level: /level2 -->
+
+  <script>
+    document.getElementById('hintButton').addEventListener('click', function () {
+      alert("Think outside the box... or maybe inside..............?");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 2 - The Cipher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 80%;
+      text-align: center;
+    }
+
+    button {
+      background-color: #00d8ff;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #008fbf;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .hidden a {
+      color: #00ff88;
+      font-size: 1.5em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Level 2</h1>
+    <p>Unscramble the phrase to reveal the next level:</p>
+    <p><strong>tucreurtsarfni</strong></p>
+    <input type="text" id="answer" placeholder="Enter your answer here">
+    <button id="submit">Submit</button>
+    <div class="hidden" id="next-level">
+      <p>Well done! Proceed to the next level:</p>
+      <a href="/level3">Go to Level 3</a>
+    </div>
+  </div>
+
+  <script>
+    const correctAnswer = "infrastructure"; // Correct answer for the puzzle
+    const input = document.getElementById("answer");
+    const button = document.getElementById("submit");
+    const nextLevel = document.getElementById("next-level");
+
+    button.addEventListener("click", () => {
+      if (input.value.toUpperCase() === correctAnswer) {
+        nextLevel.style.display = "block"; // Show the next level link
+      } else {
+        alert("Incorrect! Try again.");
+      }
+    });
+  </script>
+</body>
+</html>
