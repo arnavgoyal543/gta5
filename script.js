@@ -8,7 +8,7 @@ const headlines = [
 
 // Background images for the Home Section
 const backgrounds = [
-  "gta5-bg1.jpg",  // Replace with actual GTA 5 image paths
+  "grand-theft-auto-5-1647623589100.webp",  // Replace with actual GTA 5 image paths
   "gta5-bg2.jpg",  // Replace with actual GTA 5 image paths
   "gta5-bg3.jpg",
   "gta5-bg4.jpg",  // Replace with actual GTA 5 image paths
